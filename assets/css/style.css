@@ -1,0 +1,219 @@
+	@import url('https://fonts.googleapis.com/css?family=Open+Sans'); 
+
+body {
+	font-family: 'Open Sans', sans-serif !important;
+		/*font-size:1.8vw !important;*/
+		font-size:13px !important;
+	    background-color: white;
+	    max-width: 960px;
+	    /*margin:0 auto;*/
+	    /*border: 3px solid lightgrey;*/ /* To see the limit of the content-wrapper*/
+      overflow-x: scroll;
+       overflow-y: auto;	
+       margin: 0 10px;
+}
+
+h3{
+    font-size:13px !important;
+}
+
+     
+
+     .content-wrapper{
+         left: 38%;
+         padding-top:5%;
+         /*float: left;*/
+       /*position: relative;*/
+        /*height: calc(100% - 2.5em);*/
+       /*overflow-x: scroll;*/
+       /*overflow-y: hidden;*/
+       max-width:1000px;
+       max-height:680px;
+       display:flex;
+       flex-direction:column;
+     }
+     
+     .container{
+         display:flex;
+         
+     }
+     
+     .writeup{
+     width:800px;
+     padding:15px;
+     margin-top:25px;
+     margin-left: 25px;
+     text-align:justified-left;
+     }
+     
+     
+     .ImgHolder{
+         /*width:auto;*/
+        /*margin-top:5px;*/
+        /*margin-left:30px;*/
+        padding: 25px;
+        margin-top: 67px;
+        /*transform: rotate(90deg);*/
+        align-items: center;
+        /*padding:5px;*/
+        /*display:inline-block;*/
+        /*float:left;*/
+        /*position: relative;*/
+     }
+     
+     
+      .SecHolder{
+         /*width:auto;*/
+        /*margin-top:5px;*/
+        /*margin-left:30px;*/
+        margin: 25px;
+        /*padding-top: 10px;*/
+        /*transform: rotate(90deg);*/
+        align-items: center;
+        /*padding:5px;*/
+        /*display:inline-block;*/
+        /*float:left;*/
+        /*position: relative;*/
+     }
+     
+ 
+     
+     .ImgHolder img, .SecHolder img{
+         border: 3px solid lightgrey !important;
+         width: auto;
+         height:30vw;
+         
+     }
+     
+     
+     .sectionHeader{
+         font-size: 13px;
+         font-family: 'Open Sans', sans-serif;
+         padding: 3px;
+         /*margin-top:3px; */
+     }
+     
+     .caption{
+         font-size: 13px;
+         font-family: 'Open Sans', sans-serif;
+         margin-left:37%;
+     }
+
+    
+     #MainLogo {
+         font-weight:400;
+     }
+
+         .sidebar.sidebar-left{
+			background-color: white;
+			width:356px !important;
+			/*top:85px;*/
+			padding-top: 80px;
+			}
+	
+
+	.links{
+		padding-left: 5px;
+		font-size: 13px;
+	}
+   /*width of the main link is tied to the width of the sidebar (width of word + (width of the sidebar - width of the word))		*/
+	.sub-links{
+		margin-left: 8px;
+		margin:8px;
+		border: 10px;
+		padding: 10px 15px 10px 15px; /*padding top and bottom not working :/ */
+		font-size:13px;
+		display:none;
+		list-style-type: none;
+		}
+			
+		
+	.link:hover .sub-links{
+		display: inline-block; /*link to the display: none*/
+		list-style-type: none;
+		text-decoration: none;
+		}	
+		
+	.sub-links .sub-link a{ 
+	    padding: 5px 20px !important; /*padding is collapsing, change the positioning to reletive ? or display float or clear ?*/
+	    margin-top: 20px !important; 
+	    width:275px;
+	}	
+	
+		a:hover{
+		    text-decoration: none;  
+		}
+		
+.sidebar > ul {
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #757575;
+}
+
+.sidebar ul li.active a {
+    /*color: #424242;*/ 
+    color:green;
+}
+
+.sidebar ul li a:hover {
+    /*color: #FFF;*/
+    color: #757575;
+    background-color: #EBEBEB;
+    text-decoration: none;
+    font-size: 13px;
+} 
+
+@media(max-width: 768px){
+    
+    html, body, h3, ul, li, a{
+        /*font-size:1.69vw !important;*/
+        font-size:25px !important;
+    }
+    
+    .content-wrapper{
+        left:0;
+      padding-top:15%;
+         max-height: 600px;  
+    }
+    
+    .ImgHolder{
+          padding-top:56px;
+    }   
+    
+    .ImgHolder img, .SecHolder img{
+         height:103vw;
+         
+     }
+     
+      .writeup{
+     width:550px;
+     padding:15px;
+     margin-top:470px;
+     margin-left: 30px;
+     }
+ 
+}
+
+@media(max-width: 768px) and (orientation: landscape) {
+    
+    
+     .ImgHolder img, .SecHolder img{
+        height:1000px;
+        width:auto;
+    }
+    
+    
+}
+
+@media(max-width: 768px) and (orientation: portrait) {
+    
+    
+    .ImgHolder img, .SecHolder img{
+        height:1800px;
+        width:auto;
+    }
+    
+    
+}
